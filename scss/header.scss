@@ -1,0 +1,25 @@
+.main-header {
+  background-color: $black;
+
+  .main-navigation {
+    display: flex;
+
+    .main-header-logo {
+      font-family: FuturaDemiC;
+      font-size: 14px;
+      line-height: 16px;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $yellow;
+    }
+
+    .site-navigation {
+      &__item {
+        font-family: FuturaBookC;
+        font-size: 14px;
+        line-height: 16px;
+        color: #FFFFFF;
+      }
+    }
+  }
+}
