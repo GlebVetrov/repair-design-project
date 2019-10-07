@@ -5,7 +5,9 @@
     display: flex;
 
     .main-header-logo {
-      font-family: FuturaDemiC;
+      margin-left: 82px;
+      padding: 37px 0;
+      font-family: FuturaDemiC, sans-serif;
       font-size: 14px;
       line-height: 16px;
       text-decoration: none;
@@ -14,11 +16,54 @@
     }
 
     .site-navigation {
+      display: flex;
+      margin-left: 95px;
+      padding: 37px 0;
+
       &__item {
-        font-family: FuturaBookC;
+        margin-right: 47px;
+      }
+
+      &__link {
+        font-family: FuturaBookC, sans-serif;
         font-size: 14px;
         line-height: 16px;
-        color: #FFFFFF;
+        color: $white;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      &__item .selected {
+        color: $yellow;
+      }
+    }
+
+    .main-navigation__contacts {
+      display: flex;
+      margin-left: 67px;
+      padding-top: 37px;
+
+      &__link {
+        margin-right: 45px;
+        font-family: FuturaDemiC, sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: right;
+        text-decoration-line: underline;
+        color: $yellow;
+      }
+
+      &__btn {
+        padding: 13px 33px;
+        font-family: FuturaDemiC, sans-serif;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $white;
+        background: $yellow;
+        box-shadow: 0 5px 15px rgba(227, 184, 115, 0.2);
+        border-radius: 2px;
       }
     }
   }
