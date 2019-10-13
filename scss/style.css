@@ -2,6 +2,7 @@
 /**
  * Сброс стилей
  **/
+@import url("https://fonts.googleapis.com/css?family=Yeseva+One&display=swap");
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -95,6 +96,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   font-weight: normal;
   font-style: normal;
 }
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 1440px;
+  margin: 0 auto;
+}
+
 .main-header {
   background-color: #131313;
 }
@@ -157,9 +167,107 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, 
   border-radius: 2px;
 }
 
-.wrapper {
-  width: 1440px;
+.features {
+  position: relative;
+  display: flex;
+  background-color: #131313;
+}
+.features .features__contact {
+  width: 82px;
+  padding-top: 200px;
+}
+.features .features__contact .instagram {
+  padding: 30px 0 0 30px;
+}
+.features .features__contact .instagram__link {
+  display: inline-block;
   margin: 0 auto;
+  font-family: FuturaDemiC, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #E3B873;
+  transform-origin: left bottom;
+  transform: rotate(90deg);
+}
+.features .features__contact .instagram__link:after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  box-sizing: border-box;
+  width: 70px;
+  height: 1.5px;
+  background: #E3B873;
+  border: solid #131313;
+  border-width: 0 8px;
+}
+.features .features__contact .instagram__link:after {
+  margin-right: -100%;
+}
+.features .features__content {
+  flex-grow: 1;
+  background-image: url(../img/bg-image.png);
+  padding: 195px 0 200px 60px;
+}
+.features .features__content h1 {
+  margin-bottom: 20px;
+  font-family: Yeseva One, cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.features .features__content h1 span {
+  color: #E3B873;
+}
+.features .features__content p {
+  margin-bottom: 40px;
+  font-family: Futura, sans-serif;
+  font-size: 22px;
+  line-height: 30px;
+  color: #FFFFFF;
+}
+.features .features__content__btns {
+  display: flex;
+}
+.features .features__content__btns button {
+  padding: 20px 41px;
+  margin-right: 20px;
+  font-family: FuturaDemiC, sans-serif;
+  font-size: 13px;
+  line-height: 15px;
+  color: #FFFFFF;
+  background: #E3B873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+  border-radius: 2px;
+  border: none;
+}
+.features .features__content__btns button:last-child {
+  background: transparent;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+}
+.features .scroll-btn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 34px 48px;
+  font-family: Yeseva One, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #131313;
+  border: 0;
+  transform: translateY(50%);
+}
+.features .scroll-btn__img {
+  margin-left: 12px;
+  vertical-align: middle;
 }
 
 /*# sourceMappingURL=style.css.map */

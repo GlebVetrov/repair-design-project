@@ -1,0 +1,119 @@
+.features {
+  position: relative;
+  display: flex;
+  background-color: $black;
+
+  .features__contact {
+    width: 82px;
+    padding-top: 200px;
+
+    .instagram {
+      padding: 30px 0 0 30px;
+
+      &__link {
+        display: inline-block;
+        margin: 0 auto;
+        font-family: FuturaDemiC, sans-serif;
+        font-size: 14px;
+        line-height: 16px;
+        text-decoration: none;
+        color: $yellow;
+        transform-origin: left bottom;
+        transform: rotate(90deg);
+
+        &:after {
+          content: '';
+          display: inline-block;
+          vertical-align: middle;
+          box-sizing: border-box;
+          width: 70px;
+          height: 1.5px;
+          background: $yellow;
+          border: solid $black;
+          border-width: 0 8px;
+        }
+
+        &:after {
+          margin-right: -100%;
+        }
+      }
+    }
+  }
+
+  .features__content {
+    flex-grow: 1;
+    background-image: url(../img/bg-image.png);
+    padding: 195px 0 200px 60px;
+
+    h1 {
+      margin-bottom: 20px;
+      font-family: Yeseva One, cursive;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 40px;
+      line-height: 53px;
+      text-transform: uppercase;
+      color: $white;
+
+      span {
+        color: $yellow;
+      }
+
+    }
+    
+    p {
+      margin-bottom: 40px;
+      font-family: Futura, sans-serif;
+      font-size: 22px;
+      line-height: 30px;
+      color: $white;
+
+    }
+
+    &__btns {
+      display: flex;
+
+      button {
+        padding: 20px 41px;
+        margin-right: 20px;
+        font-family: FuturaDemiC, sans-serif;
+        font-size: 13px;
+        line-height: 15px;
+        color: $white;
+        background: $yellow;
+        box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
+        border-radius: 2px;
+        border: none;
+      }
+
+      button:last-child {
+        background: transparent;
+        border: 1px solid #FFFFFF;
+        border-radius: 2px;
+      }
+    }
+
+  }
+
+  .scroll-btn {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 34px 48px;
+    font-family: Yeseva One, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-transform: uppercase;
+    color: $white;
+    background-color: $black;
+    border: 0;
+    transform: translateY(50%);
+
+    &__img {
+      margin-left: 12px;
+      vertical-align: middle;
+    }
+  }
+}
