@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'FuturaBookC';
+    src: url('../fonts/Futura-Medium.eot');
+    src: url('../fonts/Futura-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Futura-Medium.woff2') format('woff2'),
+        url('../fonts/Futura-Medium.woff') format('woff'),
+        url('../fonts/Futura-Medium.ttf') format('truetype'),
+        url('../fonts/Futura-Medium.svg#Futura-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaBookC';
+    src: url('../fonts/FuturaBT-Book.eot');
+    src: url('../fonts/FuturaBT-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaBT-Book.woff2') format('woff2'),
+        url('../fonts/FuturaBT-Book.woff') format('woff'),
+        url('../fonts/FuturaBT-Book.ttf') format('truetype'),
+        url('../fonts/FuturaBT-Book.svg#FuturaBT-Book') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaDemiC';
+    src: url('../fonts/FuturaDemiC-Italic.eot');
+    src: url('../fonts/FuturaDemiC-Italic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaDemiC-Italic.woff2') format('woff2'),
+        url('../fonts/FuturaDemiC-Italic.woff') format('woff'),
+        url('../fonts/FuturaDemiC-Italic.ttf') format('truetype'),
+        url('../fonts/FuturaDemiC-Italic.svg#FuturaDemiC-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('../fonts/ProximaNova-Black.eot');
+    src: url('../fonts/ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Black.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Black.woff') format('woff'),
+        url('../fonts/ProximaNova-Black.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Black.svg#ProximaNova-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FuturaDemiC';
+    src: url('../fonts/FuturaDemiC.eot');
+    src: url('../fonts/FuturaDemiC.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaDemiC.woff2') format('woff2'),
+        url('../fonts/FuturaDemiC.woff') format('woff'),
+        url('../fonts/FuturaDemiC.ttf') format('truetype'),
+        url('../fonts/FuturaDemiC.svg#FuturaDemiC') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Yeseva+One&display=swap');
