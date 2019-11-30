@@ -200,7 +200,7 @@
       color: $white;
     }
 
-    &__logo-img {
+    &__logo {
       @include backgroundImg("/assets/img/camera.svg");
       position: relative;
       display: inline-block;
@@ -236,7 +236,7 @@
       }
 
       &-btn {
-        @include backgroundImg("/assets/img/play-button.svg");
+        @include backgroundImg("/assets/img/play-button.png");
         @include size(85px);
         position: absolute;
         top: calc(434px / 2 - 85px / 2);
