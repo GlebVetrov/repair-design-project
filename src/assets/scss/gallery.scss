@@ -1,0 +1,70 @@
+.gallery {
+  @include backgroundImg("/assets/img/bg-gallery.png");
+  display: flex;
+  justify-content: space-between;
+
+  &__list {
+    padding: 137px 0 98px 99px;
+
+    &-title {
+      padding-bottom: 37px;
+      font-family: Yeseva One, serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 27px;
+      line-height: 37px;
+      text-transform: uppercase;
+      color: #E3B873;
+    }
+
+    &-item {
+      padding-bottom: 5px;
+    }
+
+    &-link {
+      font-family: Proxima Nova, sans-serif;
+      font-size: 20px;
+      font-weight: 200;
+      line-height: 34px;
+      color: #FFFFFF;
+      text-decoration: none;
+
+      &_selected {
+        display: inline-block;
+        color: #E3B873;
+        border-bottom: 1px solid #E3B873;
+      }
+    }
+  }
+
+  &__images {
+    position: relative;
+    height: 864px;
+  }
+
+  &__img {
+    position: absolute;
+
+    &:nth-of-type(1) {
+      top: -42px;
+      right: 500px;
+    }
+
+    &:nth-of-type(2) {
+      top: 555px;
+      right: 500px;
+    }
+
+    &:nth-of-type(3) {
+      top: -112px;
+      right: 102px;
+    }
+
+    &:nth-of-type(4) {
+      top: 200px;
+      right: 102px;
+    }
+  }
+
+
+}

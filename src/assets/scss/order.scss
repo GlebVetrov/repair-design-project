@@ -1,10 +1,10 @@
 .order {
   display: flex;
+  padding-bottom: 242px;
 
   &__steps {
-    @include size(834px, 799px);
-    min-width: 834px;
     position: relative;
+    min-width: 834px;
 
     &-lines {
       position: absolute;
