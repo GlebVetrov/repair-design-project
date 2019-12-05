@@ -1,9 +1,0 @@
-@mixin backgroundImg($url) {
-  background: url($url) 100% 100% no-repeat;
-  background-size: cover;
-}
-
-@mixin size($width,$height: $width) {
-  width: $width;
-  height: $height;
-}
