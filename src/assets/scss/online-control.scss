@@ -1,0 +1,112 @@
+.online-control {
+  padding-top: 270px;
+  text-align: center;
+
+  &__inner {
+    display: inline-block;
+    max-width: 817px;
+    padding: 0 22px;
+  }
+
+  &__text {
+    position: relative;
+    padding-top: 35px;
+    padding-bottom: 94px;
+    font-family: $font-book-c;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    color: #363636;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: calc(50% - 27.5px);
+      width: 55px;
+      height: 1.5px;
+      background-color: #E3B873;
+    }
+  }
+
+  &__form {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 33px;
+  }
+
+  &__wrap {
+    flex: 1 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
+
+  &__input-title {
+    font-family: $font-book-c;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(54, 54, 54, 0.5);
+  }
+
+  &__input {
+    width: 100%;
+    max-width: 231px;
+    padding: 8px 0;
+    font-family: $font-book-c;
+    font-size: 18px;
+    line-height: 24px;
+    color: #363636;
+    border: 0;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  }
+
+  &__btn {
+    padding: 20px 75px;
+    border: 0;
+    border-radius: 2px;
+    background: #E3B873;
+    box-shadow: 0 15px 15px rgba(227, 184, 115, 0.15);
+    font-family: FuturaDemiC, sans-serif;
+    font-size: 15px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+
+  &__data {
+    padding-bottom: 150px;
+    font-family: $font-book-c;
+    font-size: 16px;
+    line-height: 22px;
+    color: #181818;
+
+    &-label {
+      position: relative;
+      padding-left: 27px;
+      cursor: pointer;
+    }
+
+    &-label:before {
+      content: "";
+      @include size(18px);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: inline-block;
+      background: #E3B873;
+    }
+
+    &-checkbox:checked + &-label:after {
+      content: url(/assets/img/checkbox2.svg);
+      position: absolute;
+      bottom: 0;
+      left: 4px;
+    }
+
+    &-checkbox {
+      display: none;
+    }
+  }
+}

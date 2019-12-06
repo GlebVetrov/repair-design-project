@@ -1,0 +1,102 @@
+.types-of-repair {
+  text-align: center;
+
+  &__title {
+    padding-bottom: 13px;
+    font-family: Yeseva One, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #181818;
+  }
+
+  &__logo {
+    @include size(28px);
+    @include backgroundImg("/assets/img/types-of-repair.svg");
+    position: relative;
+    display: inline-block;
+
+    &:before,
+    &:after {
+      content: "";
+      position: absolute;
+      top: 11px;
+      width: 32px;
+      height: 1.5px;
+      background: $yellow;
+    }
+
+    &:before {
+      left: 40px;
+    }
+
+    &:after {
+      right: 40px;
+    }
+  }
+
+  &__prices {
+    display: flex;
+    justify-content: space-between;
+    padding: 31px 100px 179px;
+  }
+
+  &__price-list {
+    position: absolute;
+    bottom: 27px;
+    left: 31px;
+    width: 100%;
+    max-width: 330px;
+    padding: 25px 40px 55px;
+    text-align: left;
+    background-color: #fff;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+
+    &__title {
+      margin-bottom: 13px;
+      font-family: Yeseva One, serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+      color: #363636;
+    }
+  }
+
+  &__price {
+    flex: 1 1;
+    position: relative;
+    padding-bottom: 187px;
+    text-align: left;
+
+    &__item {
+      font-family: $font-book-c;
+      font-size: 15px;
+      line-height: 25px;
+      color: #959595;
+    }
+
+    &__btn {
+      position: absolute;
+      bottom: 0;
+      left: 31px;
+      padding: 17px 21.5px;
+      border: 0;
+      font-family: Yeseva One, serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      background-color: #E3B873;
+      box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    }
+  }
+
+
+}
